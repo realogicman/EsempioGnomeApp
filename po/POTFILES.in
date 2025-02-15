@@ -1,0 +1,8 @@
+# List of source files containing translatable strings.
+# Please keep this file sorted alphabetically.
+data/org.altervista.ReaLoGiCMaN.desktop.in
+data/org.altervista.ReaLoGiCMaN.metainfo.xml.in
+data/org.altervista.ReaLoGiCMaN.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

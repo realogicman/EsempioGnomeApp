@@ -1,0 +1,369 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.94.1 -->
+<!--Questo è un commento-->
+<interface>
+  <!-- interface-name window.ui -->
+  <!-- interface-description Interfaccia dimostrativa -->
+  <!-- interface-copyright © 2025 Marco Angeli -->
+  <!-- interface-authors Marco Angeli -->
+  <requires lib="Adw" version="1.0"/>
+  <requires lib="gio" version="2.0"/>
+  <requires lib="gtk" version="4.0"/>
+  <requires lib="libadwaita" version="1.4"/>
+  <template class="RealogicmanWindow" parent="AdwApplicationWindow">
+    <property name="content">
+      <object class="AdwToolbarView" id="contenuto">
+        <property name="content">
+          <object class="GtkNotebook">
+            <property name="hexpand">True</property>
+            <property name="tab-pos">left</property>
+            <child>
+              <object class="GtkNotebookPage" id="npInformazioni">
+                <property name="child">
+                  <object class="GtkScrolledWindow">
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">computer</property>
+                            <property name="margin-bottom">20</property>
+                            <property name="margin-top">20</property>
+                            <property name="pixel-size">100</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwWindowTitle">
+                            <property name="hexpand">True</property>
+                            <property name="margin-bottom">20</property>
+                            <property name="margin-top">20</property>
+                            <property name="subtitle">Presentazione di questa App</property>
+                            <property name="title">Informazioni generali</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Applicazione realizzata con "Gnome Builder".
+Linguaggio utilizzato: Python
+Interfaccia realizzata in Gtk/Adw (con "Cambalache")</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">10</property>
+                            <property name="margin-start">10</property>
+                            <property name="margin-top">10</property>
+                            <property name="wrap">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLinkButton">
+                            <property name="icon-name">security-high</property>
+                            <property name="label">Homepage</property>
+                            <property name="margin-top">10</property>
+                            <property name="uri">https://realogicman.altervista.org/</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLinkButton">
+                            <property name="icon-name">security-high</property>
+                            <property name="label">GitHub</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="uri">https://github.com/realogicman/</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="halign">center</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">10</property>
+                            <property name="margin-start">10</property>
+                            <property name="margin-top">10</property>
+                            <child>
+                              <object class="GtkImage" id="imgHumanFox">
+                                <property name="file">/app/share/risorse/human-fox.jpg</property>
+                                <property name="halign">center</property>
+                                <property name="height-request">200</property>
+                                <property name="hexpand">True</property>
+                                <property name="width-request">200</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="hexpand">True</property>
+                                <property name="label">Immagine di esempio 
+(generata con IA)</property>
+                                <property name="width-request">200</property>
+                                <property name="wrap">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel">
+                    <property name="label">Informazioni</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkNotebookPage" id="npEsempi">
+                <property name="child">
+                  <object class="GtkScrolledWindow">
+                    <child>
+                      <object class="GtkBox">
+                        <property name="margin-top">20</property>
+                        <property name="orientation">vertical</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkImage">
+                            <property name="icon-name">applications-utilities</property>
+                            <property name="pixel-size">100</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="AdwWindowTitle">
+                            <property name="hexpand">True</property>
+                            <property name="margin-bottom">20</property>
+                            <property name="subtitle">Raccolta di esempi utili</property>
+                            <property name="title">Sezione Esempi</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="label">Qualche esempio per comprendere: 
+* l'impaginazione degli oggetti nell'interfaccia 
+* l'interazione tra i vari oggetti e il codice</property>
+                            <property name="wrap">True</property>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="halign">center</property>
+                            <property name="margin-top">20</property>
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">10</property>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="label">Collegamenti ai siti delle risorse utilizzate</property>
+                                <property name="wrap">True</property>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="halign">center</property>
+                                <property name="spacing">10</property>
+                                <child>
+                                  <object class="GtkLinkButton">
+                                    <property name="icon-name">security-high</property>
+                                    <property name="label">Gnome</property>
+                                    <property name="uri">https://www.gnome.org/</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkLinkButton">
+                                    <property name="icon-name">security-high</property>
+                                    <property name="label">Gnome Builder</property>
+                                    <property name="uri">https://apps.gnome.org/it/Builder/</property>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkLinkButton">
+                                    <property name="icon-name">security-high</property>
+                                    <property name="label">Cambalache</property>
+                                    <property name="uri">https://gitlab.gnome.org/jpu/cambalache</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="halign">center</property>
+                            <property name="margin-top">20</property>
+                            <property name="spacing">10</property>
+                            <child>
+                              <object class="GtkButton" id="btWebbrowser">
+                                <property name="halign">center</property>
+                                <property name="icon-name">network-server-symbolic</property>
+                                <property name="tooltip-text">Esempio di utilizzo di: 
+* subprocess 
+* xdg-open</property>
+                                <signal name="clicked" handler="btWebbrowser_Cliccato"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="label">Lancia il sito ReaLoGiCMaN utilizzando una chiamata di sistema</property>
+                                <property name="wrap">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="halign">center</property>
+                            <property name="margin-top">20</property>
+                            <property name="orientation">vertical</property>
+                            <property name="spacing">10</property>
+                            <property name="width-request">400</property>
+                            <child>
+                              <object class="GtkEntry" id="entryInput">
+                                <property name="text">Testo di prova</property>
+                                <property name="tooltip-text">Casella di input</property>
+                                <property name="width-chars">25</property>
+                                <signal name="activate" handler="entryInput_Attivato"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkBox">
+                                <property name="spacing">10</property>
+                                <child>
+                                  <object class="GtkButton" id="btInput">
+                                    <property name="halign">center</property>
+                                    <property name="icon-name">format-text-direction-ltr-symbolic</property>
+                                    <property name="tooltip-text">Copia il testo della casella di input nell'etichetta a lato</property>
+                                    <signal name="clicked" handler="btInput_Cliccato"/>
+                                  </object>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="lbOutput">
+                                    <property name="label">Etichetta di Output (premere il pulsante a lato)</property>
+                                    <property name="tooltip-text">Etichetta di destinazione</property>
+                                    <property name="wrap">True</property>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="GtkBox">
+                            <property name="halign">center</property>
+                            <property name="margin-top">20</property>
+                            <property name="spacing">10</property>
+                            <child>
+                              <object class="GtkButton" id="btWBrowserPy">
+                                <property name="halign">center</property>
+                                <property name="icon-name">application-x-executable-symbolic</property>
+                                <property name="tooltip-text">Esempio di utilizzo: 
+* os.system
+* Script Python "autonomo"</property>
+                                <property name="visible">False</property>
+                                <signal name="clicked" handler="btWBrowserPy_Cliccato"/>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkLabel">
+                                <property name="label">Lancia un browser indipendente.
+Leggere il relativo codice per maggiori informazioni.</property>
+                                <property name="tooltip-text">Funzionante solo nell'ambiente di sviluppo. 
+Una volta distriibuito con Flatpak si verificano dei malfunzionamenti 
+dovuti all'implementazione "casalinga" del componente WebView 
+(non funziona)</property>
+                                <property name="visible">False</property>
+                                <property name="wrap">True</property>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel">
+                    <property name="label">Esempi</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkNotebookPage" id="npMedia">
+                <property name="child">
+                  <object class="GtkScrolledWindow">
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkVideo" id="mediaVideo">
+                            <property name="autoplay">True</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel">
+                    <property name="label">Media</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkNotebookPage" id="npLeggimi">
+                <property name="child">
+                  <object class="GtkScrolledWindow">
+                    <child>
+                      <object class="GtkBox">
+                        <property name="orientation">vertical</property>
+                        <child>
+                          <object class="GtkTextView" id="tvLeggimi">
+                            <property name="buffer">
+                              <object class="GtkTextBuffer" id="tvLeggimiBuffer"/>
+                            </property>
+                            <property name="editable">False</property>
+                            <property name="margin-bottom">10</property>
+                            <property name="margin-end">10</property>
+                            <property name="margin-start">10</property>
+                            <property name="margin-top">10</property>
+                            <property name="wrap-mode">word</property>
+                          </object>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                </property>
+                <property name="tab">
+                  <object class="GtkLabel">
+                    <property name="label">Leggimi</property>
+                  </object>
+                </property>
+              </object>
+            </child>
+          </object>
+        </property>
+        <child type="top">
+          <object class="AdwHeaderBar">
+            <child type="end">
+              <object class="GtkMenuButton">
+                <property name="icon-name">open-menu-symbolic</property>
+                <property name="menu-model">primary_menu</property>
+                <property name="primary">True</property>
+                <property name="tooltip-text" translatable="yes">Main Menu</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </property>
+    <property name="default-height">640</property>
+    <property name="default-width">912</property>
+    <property name="title" translatable="yes">ReaLoGiCMaN</property>
+  </template>
+  <menu id="primary_menu">
+    <section>
+      <item>
+        <attribute name="action">win.show-help-overlay</attribute>
+        <attribute name="label" translatable="yes">_Keyboard Shortcuts</attribute>
+      </item>
+      <item>
+        <attribute name="action">app.about</attribute>
+        <attribute name="label" translatable="yes">_About ReaLoGiCMaN</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

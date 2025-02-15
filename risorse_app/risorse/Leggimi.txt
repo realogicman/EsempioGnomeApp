@@ -1,0 +1,8 @@
+Testo contenuto nel file: "Leggimi.txt"
+
+Questa è una app di test.
+Serve solo per introdurre alcuni aspetti della programmazione su Gnome Builder.
+
+Personalmente ho davvero molto da imparare su questo ambiente, ma spero che questo esempio possa tornare utile.
+
+Marco

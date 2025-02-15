@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=ReaLoGiCMaN
+Exec=realogicman
+Icon=org.altervista.ReaLoGiCMaN
+Terminal=false
+Type=Application
+Categories=Utility;
+Keywords=GTK;
+StartupNotify=true
+DBusActivatable=true
